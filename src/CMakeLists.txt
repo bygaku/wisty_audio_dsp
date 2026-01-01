@@ -8,7 +8,7 @@ add_library(${LIBRARY_NAME}
 
 target_include_directories(${LIBRARY_NAME}
         PUBLIC
-        ../include
+        ../include/lib
 )
 
 # Compiler options.

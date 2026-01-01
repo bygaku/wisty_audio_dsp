@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "buffer/ring_buffer.h"
+#include "../include/lib/buffer/ring_buffer.h"
 
 using wwist::audio::buffer::RingBuffer;
 using wwist::audio::buffer::MakeRingBuffer;
