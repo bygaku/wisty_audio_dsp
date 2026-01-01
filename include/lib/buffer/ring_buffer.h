@@ -6,7 +6,7 @@
 #define AUDIO_DSP_RING_BUFFER_H
 
 #include <cstdint>
-#include "buffer_type.h"
+#include "../../private_header/buffer_type.h"
 #include <vector>
 
 namespace wwist::audio::buffer {
