@@ -27,7 +27,7 @@ namespace wwist::audio_engine {
 		block.num_channels = buf.ch.size();
 		block.num_frames   = buf.ch.empty() ? 0 : buf.ch[0].size();
 
-		thread_local std::vector<BUF_TYPE*> ch_ptrs;
+		std::vector<BUF_TYPE*> ch_ptrs;
 		ch_ptrs.resize(block.num_channels);
 		for (size_t ch = 0; ch < block.num_channels; ++ch) {
 			ch_ptrs[ch] = buf.ch[ch].data();
