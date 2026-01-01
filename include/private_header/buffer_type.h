@@ -7,7 +7,7 @@
 
 #include <type_traits>
 
-namespace wwist::audio::buffer {
+namespace wwist::audio_engine {
 	/**
 	 * @brief Concept that restricts T to float or short.
 	 */
