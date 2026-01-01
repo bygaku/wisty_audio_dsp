@@ -9,13 +9,13 @@
 #include "../../private_header/buffer_type.h"
 #include <vector>
 
-namespace wwist::audio::buffer {
+namespace wwist {
 
 	/**
 	 * @brief Generic ring buffer for audio samples or arbitrary data.
 	 * @tparam T Sample type stored in the buffer (e.g., float, short).
 	 */
-	template<typename T>
+	template<audio_engine::Sample T>
 	struct RingBuffer {
 		std::vector<T> data;	// Data in buffer.
 		int32_t capacity{};		// Maximum number of elements the ring buffer can hold.
@@ -28,7 +28,7 @@ namespace wwist::audio::buffer {
 	 * @param capacity Number of samples to allocate.
 	 * @return The Ring buffer instance.
 	 */
-	template<Sample T>
+	template<audio_engine::Sample T>
 	RingBuffer<T> MakeRingBuffer(const int& capacity) {
 		// Make buffer instance.
 		RingBuffer<T> buf;

@@ -5,8 +5,8 @@
 #include <gtest/gtest.h>
 #include "../include/lib/buffer/ring_buffer.h"
 
-using wwist::audio::buffer::RingBuffer;
-using wwist::audio::buffer::MakeRingBuffer;
+using wwist::audio_engine::buffer::RingBuffer;
+using wwist::audio_engine::buffer::MakeRingBuffer;
 
 // TEST float buffer.
 TEST(RingBufferTest, MakeRingBufferFloat) {
