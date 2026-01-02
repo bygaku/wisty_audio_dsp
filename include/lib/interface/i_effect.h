@@ -14,8 +14,32 @@ namespace wwist::audio_engine {
 	 */
 	class IEffect {
 	public:
+		/**
+		 * @brief Destructor
+		 */
 		virtual ~IEffect() = default;
-		virtual void ProcessBlock(AudioBlock& block, const size_t& num_samples) noexcept = 0;
+
+		/**
+		 * @brief Processes a block of audio data.
+		 * @param block The audio block containing input/output buffers and metadata.
+		 */
+		virtual void ProcessBlock(AudioBlock& block) noexcept = 0;
+
+		/**
+		 * @brief Get whether this module is active.
+		 * @attention No Discard.
+		 * @return module state.
+		 */
+		[[nodiscard]] bool IsActive() const noexcept { return is_active_; }
+
+		/**
+		 * @brief Set the life of this module.
+		 * @param is_active true or false
+		 */
+		void SetActive(const bool& is_active) noexcept { is_active_ = is_active; }
+
+	protected:
+		bool is_active_ = true;
 	};
 
 }
