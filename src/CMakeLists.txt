@@ -9,6 +9,7 @@ add_library(${LIBRARY_NAME}
 target_include_directories(${LIBRARY_NAME}
         PUBLIC
         ../include/lib
+        ../include/lib/audio
 )
 
 # Compiler options.
