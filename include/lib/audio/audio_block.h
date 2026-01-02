@@ -21,6 +21,15 @@ namespace wwist::audio_engine {
 		MY_DWORD	sample_rate;
 	};
 
+	/**
+	 * @brief Creates AudioBlock.
+	 * @param buf Reference to the AudioBuffer containing audio data.
+	 * @param s_rate The sample rate to be assigned to the AudioBlock.
+	 * @return A configured AudioBlock representing a view of the provided buffer.
+	 * @remark The generated AudioBlock does not own the memory of the buffer. Modifications to
+	 *         the AudioBlock's channel access pointers will affect the original buffer.
+	 * @remark The returned AudioBlock's in and out pointers reference the same channel data.
+	 */
 	[[nodiscard]] inline AudioBlock MakeAudioBlock(AudioBuffer& buf, const size_t& s_rate) {
 		AudioBlock block{};
 		block.sample_rate  = s_rate;
