@@ -16,6 +16,7 @@ namespace wwist {
 	 * ensuring resources are allocated and freed correctly.
 	 */
 	class IComponent {
+	public:
 		/**
 		 * @brief a Virtual destructor to ensure proper cleanup of derived classes.
 		 */
