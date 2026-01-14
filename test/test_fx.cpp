@@ -4,7 +4,7 @@
 
 #include <gtest/gtest.h>
 
-#include "../include/lib/data_type.h"
+#include "../include/lib/utils/data_type.h"
 #include "../include/lib/audio/audio_block.h"
 #include "../include/lib/audio/effect_chain.h"
 #include "effect/gain.h"

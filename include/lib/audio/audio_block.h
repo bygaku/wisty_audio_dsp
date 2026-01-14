@@ -5,7 +5,7 @@
 #ifndef AUDIO_DSP_AUDIO_BLOCK_H
 #define AUDIO_DSP_AUDIO_BLOCK_H
 
-#include "data_type.h"
+#include "../utils/data_type.h"
 #include "audio_buffer.h"
 
 namespace wwist::audio_engine {
@@ -16,8 +16,8 @@ namespace wwist::audio_engine {
 	struct AudioBlock {
 		BUF_TYPE**	in;		// Access as in[channel][frame].
 		BUF_TYPE**	out;	// Access as out[channel][frame].
-		size_t		num_channels;
-		size_t		num_frames;
+		MY_WORD		num_channels;
+		MY_DWORD	num_frames;
 		MY_DWORD	sample_rate;
 	};
 

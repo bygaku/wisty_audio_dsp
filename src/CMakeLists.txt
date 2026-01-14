@@ -1,15 +1,19 @@
 file(GLOB SOURCE CONFIGURE_DEPENDS "./*.cpp")
+file(GLOB AUDIO_SRC CONFIGURE_DEPENDS "./audio/*.cpp")
 
 # Create an library.
 add_library(${LIBRARY_NAME}
         STATIC
         ${SOURCE}
+        ${AUDIO_SRC}
 )
 
 target_include_directories(${LIBRARY_NAME}
         PUBLIC
         ../include/lib
         ../include/lib/audio
+        ../include/lib/utils
+        ../include/lib/interface
 )
 
 # Compiler options.

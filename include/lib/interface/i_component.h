@@ -5,7 +5,7 @@
 #ifndef AUDIO_DSP_I_COMPONENT_H
 #define AUDIO_DSP_I_COMPONENT_H
 
-#include "../error_enum.h"
+#include "../utils/error_enum.h"
 
 namespace wwist {
 
