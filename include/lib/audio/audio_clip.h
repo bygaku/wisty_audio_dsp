@@ -24,7 +24,7 @@ namespace wwist::audio_engine {
 		 * @param sample_rate Sample rate in Hz.
 		 * @param b_depth A bit depth.
 		 */
-		explicit AudioClip(BUF_TYPE*		data
+		explicit AudioClip(const BUF_TYPE*	data
 						 , const MY_DWORD&	num_frames
 						 , const MY_WORD&	num_chs
 						 , const MY_DWORD&	sample_rate
