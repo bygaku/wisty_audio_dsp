@@ -5,7 +5,7 @@
 #ifndef AUDIO_DSP_AUDIO_BUFFER_H
 #define AUDIO_DSP_AUDIO_BUFFER_H
 
-#include "data_type.h"
+#include "../utils/data_type.h"
 #include <vector>
 
 namespace wwist::audio_engine {

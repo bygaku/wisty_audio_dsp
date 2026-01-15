@@ -17,7 +17,7 @@ namespace wwist {
 		NOT_SUPPORTED,
 		INTERNAL_ERROR,
 		FILE_NOT_FOUND,
-		FILE_OPEN_ERROR
+		FILE_OPEN_ERROR,
 	};
 
 }
