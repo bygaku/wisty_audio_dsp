@@ -8,7 +8,6 @@
 #include <string>
 #include <vector>
 
-#include "interface/i_object.h"
 #include "utils/error_enum.h"
 #include "binary/audio_info.h"
 
